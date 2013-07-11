@@ -10,8 +10,6 @@ end
 
 dofile(minetest.get_modpath("maptools").."/aliases.lua")
 
-print(S("[maptools] loaded."))
-
 --[[
 ****
 Map Tools
@@ -470,3 +468,5 @@ minetest.register_on_punchnode(function(pos, node, puncher)
 		minetest.env:remove_node(pos)
 	end
 end)
+
+print(S("[maptools] loaded."))
