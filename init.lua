@@ -39,7 +39,7 @@ minetest.register_craft({
 
 minetest.register_node("maptools:stone", {
 	description = S("Unbreakable Stone"),
-	tiles = {"default_steel_block.png"},
+	tiles = {"default_stone.png"},
 	drop = "",
 	groups = {unbreakable=1, not_in_creative_inventory = maptools_creative},
 	sounds = default.node_sound_stone_defaults(),
