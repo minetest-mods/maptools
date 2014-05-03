@@ -40,6 +40,7 @@ minetest.register_craft({
 minetest.register_node("maptools:stone", {
 	description = S("Unbreakable Stone"),
 	range = 12,
+	stack_max = 9999,
 	tiles = {"default_stone.png"},
 	drop = "",
 	groups = {unbreakable=1, not_in_creative_inventory = maptools_creative},
@@ -49,6 +50,7 @@ minetest.register_node("maptools:stone", {
 minetest.register_node("maptools:tree", {
 	description = S("Unbreakable Tree"),
 	range = 12,
+	stack_max = 9999,
 	tiles = {"default_tree.png"},
 	drop = "",
 	groups = {unbreakable=1, not_in_creative_inventory = maptools_creative},
@@ -58,6 +60,7 @@ minetest.register_node("maptools:tree", {
 minetest.register_node("maptools:dirt", {
 	description = S("Unbreakable Dirt"),
 	range = 12,
+	stack_max = 9999,
 	tiles = {"default_dirt.png"},
 	drop = "",
 	groups = {unbreakable=1, not_in_creative_inventory = maptools_creative},
@@ -67,6 +70,7 @@ minetest.register_node("maptools:dirt", {
 minetest.register_node("maptools:wood", {
 	description = S("Unbreakable Wooden Planks"),
 	range = 12,
+	stack_max = 9999,
 	tiles = {"default_wood.png"},
 	drop = "",
 	groups = {unbreakable=1, not_in_creative_inventory = maptools_creative},
@@ -76,6 +80,7 @@ minetest.register_node("maptools:wood", {
 minetest.register_node("maptools:glass", {
 	description = S("Unbreakable Glass"),
 	range = 12,
+	stack_max = 9999,
 	drawtype = "glasslike",
 	tiles = {"default_glass.png"},
 	paramtype = "light",
@@ -88,6 +93,7 @@ minetest.register_node("maptools:glass", {
 minetest.register_node("maptools:leaves", {
 	description = S("Unbreakable Leaves"),
 	range = 12,
+	stack_max = 9999,
 	drawtype = "allfaces_optional",
 	tiles = {"default_leaves.png"},
 	paramtype = "light",
@@ -99,6 +105,7 @@ minetest.register_node("maptools:leaves", {
 minetest.register_node("maptools:sand", {
 	description = S("Unbreakable Sand"),
 	range = 12,
+	stack_max = 9999,
 	tiles = {"default_sand.png"},
 	drop = "",
 	groups = {unbreakable=1, not_in_creative_inventory = maptools_creative},
@@ -108,6 +115,7 @@ minetest.register_node("maptools:sand", {
 minetest.register_node("maptools:gravel", {
 	description = S("Unbreakable Gravel"),
 	range = 12,
+	stack_max = 9999,
 	tiles = {"default_gravel.png"},
 	drop = "",
 	groups = {unbreakable=1, not_in_creative_inventory = maptools_creative},
@@ -120,6 +128,7 @@ minetest.register_node("maptools:gravel", {
 minetest.register_node("maptools:desert_sand", {
 	description = S("Unbreakable Desert Sand"),
 	range = 12,
+	stack_max = 9999,
 	tiles = {"default_desert_sand.png"},
 	drop = "",
 	groups = {unbreakable=1, not_in_creative_inventory = maptools_creative},
@@ -129,6 +138,7 @@ minetest.register_node("maptools:desert_sand", {
 minetest.register_node("maptools:sandstone", {
 	description = S("Unbreakable Sandstone"),
 	range = 12,
+	stack_max = 9999,
 	tiles = {"default_sandstone.png"},
 	drop = "",
 	groups = {unbreakable=1, not_in_creative_inventory = maptools_creative},
@@ -138,6 +148,7 @@ minetest.register_node("maptools:sandstone", {
 minetest.register_node("maptools:desert_stone", {
 	description = S("Unbreakable Desert Stone"),
 	range = 12,
+	stack_max = 9999,
 	tiles = {"default_desert_stone.png"},
 	drop = "",
 	groups = {unbreakable=1, not_in_creative_inventory = maptools_creative},
@@ -147,6 +158,7 @@ minetest.register_node("maptools:desert_stone", {
 minetest.register_node("maptools:grass", {
 	description = S("Unbreakable Dirt with Grass"),
 	range = 12,
+	stack_max = 9999,
 	tiles = {"default_grass.png", "default_dirt.png", "default_dirt.png^default_grass_side.png"},
 	drop = "",
 	groups = {unbreakable=1, not_in_creative_inventory = maptools_creative},
@@ -158,6 +170,7 @@ minetest.register_node("maptools:grass", {
 minetest.register_node("maptools:fullgrass", {
 	description = S("Unbreakable Full Grass"),
 	range = 12,
+	stack_max = 9999,
 	tiles = {"default_grass.png"},
 	drop = "",
 	groups = {unbreakable=1, not_in_creative_inventory = maptools_creative},
@@ -169,6 +182,7 @@ minetest.register_node("maptools:fullgrass", {
 minetest.register_node("maptools:cobble", {
 	description = S("Unbreakable Cobblestone"),
 	range = 12,
+	stack_max = 9999,
 	tiles = {"default_cobble.png"},
 	drop = "",
 	groups = {unbreakable=1, not_in_creative_inventory = maptools_creative},
@@ -178,6 +192,7 @@ minetest.register_node("maptools:cobble", {
 minetest.register_node("maptools:mossycobble", {
 	description = S("Unbreakable Mossy Cobblestone"),
 	range = 12,
+	stack_max = 9999,
 	tiles = {"default_mossycobble.png"},
 	drop = "",
 	groups = {unbreakable=1, not_in_creative_inventory = maptools_creative},
@@ -187,6 +202,7 @@ minetest.register_node("maptools:mossycobble", {
 minetest.register_node("maptools:brick", {
 	description = S("Unbreakable Brick"),
 	range = 12,
+	stack_max = 9999,
 	tiles = {"default_brick.png"},
 	drop = "",
 	groups = {unbreakable=1, not_in_creative_inventory = maptools_creative},
@@ -196,6 +212,7 @@ minetest.register_node("maptools:brick", {
 minetest.register_node("maptools:playerclip", {
 	description = S("Player Clip"),
 	range = 12,
+	stack_max = 9999,
 	inventory_image = "default_steel_block.png^dye_green.png",
 	drawtype = "airlike",
 	paramtype = "light",
@@ -208,6 +225,7 @@ minetest.register_node("maptools:playerclip", {
 minetest.register_node("maptools:fullclip", {
 	description = S("Full Clip"),
 	range = 12,
+	stack_max = 9999,
 	inventory_image = "default_steel_block.png^dye_blue.png",
 	drawtype = "airlike",
 	paramtype = "light",
@@ -219,6 +237,7 @@ minetest.register_node("maptools:fullclip", {
 minetest.register_node("maptools:fullclip_face", {
 	description = S("Full Clip Face"),
 	range = 12,
+	stack_max = 9999,
 	inventory_image = "default_steel_block.png^dye_white.png",
 	drawtype = "nodebox",
 	tiles = {"invisible.png"},
@@ -236,6 +255,7 @@ minetest.register_node("maptools:fullclip_face", {
 minetest.register_node("maptools:playerclip_bottom", {
 	description = S("Player Clip Bottom Face"),
 	range = 12,
+	stack_max = 9999,
 	inventory_image = "default_steel_block.png^dye_orange.png",
 	drawtype = "nodebox",
 	tiles = {"invisible.png"},
@@ -253,6 +273,7 @@ minetest.register_node("maptools:playerclip_bottom", {
 minetest.register_node("maptools:playerclip_top", {
 	description = S("Player Clip Top Face"),
 	range = 12,
+	stack_max = 9999,
 	inventory_image = "default_steel_block.png^dye_yellow.png",
 	drawtype = "nodebox",
 	tiles = {"invisible.png"},
@@ -271,6 +292,7 @@ for pusher_num=1,10,1 do
 minetest.register_node("maptools:pusher_" .. pusher_num, {
 	description = S("Pusher (%s)"):format(pusher_num),
 	range = 12,
+	stack_max = 9999,
 	inventory_image = "default_steel_block.png^default_apple.png",
 	drawtype = "nodebox",
 	tiles = {"invisible.png"},
@@ -289,6 +311,7 @@ end
 minetest.register_node("maptools:lightbulb", {
 	description = S("Light Bulb"),
 	range = 12,
+	stack_max = 9999,
 	inventory_image = "default_steel_block.png^default_mese_crystal_fragment.png",
 	drawtype = "airlike",
 	walkable = false,
@@ -304,6 +327,7 @@ minetest.register_node("maptools:lightbulb", {
 minetest.register_node("maptools:nobuild", {
 	description = S("Build Prevention"),
 	range = 12,
+	stack_max = 9999,
 	inventory_image = "default_steel_block.png^bones_bones.png",
 	drawtype = "airlike",
 	walkable = false,
@@ -317,6 +341,7 @@ minetest.register_node("maptools:nobuild", {
 minetest.register_node("maptools:nointeract", {
 	description = S("Interact Prevention"),
 	range = 12,
+	stack_max = 9999,
 	inventory_image = "default_steel_block.png^default_scorched_stuff.png",
 	drawtype = "airlike",
 	walkable = false,
@@ -329,6 +354,7 @@ minetest.register_node("maptools:nointeract", {
 minetest.register_node("maptools:climb", {
 	description = S("Climb Block"),
 	range = 12,
+	stack_max = 9999,
 	inventory_image = "default_steel_block.png^default_ladder.png",
 	drawtype = "airlike",
 	walkable = false,
@@ -345,6 +371,7 @@ for damage_num=1,5,1 do
 minetest.register_node("maptools:damage_" .. damage_num, {
 	description = S("Damaging Block (%s)"):format(damage_num),
 	range = 12,
+	stack_max = 9999,
 	inventory_image = "default_steel_block.png^farming_cotton_" .. damage_num .. ".png",
 	drawtype = "airlike",
 	walkable = false,
@@ -360,6 +387,7 @@ end
 minetest.register_node("maptools:kill", {
 	description = S("Kill Block"),
 	range = 12,
+	stack_max = 9999,
 	inventory_image = "default_steel_block.png^dye_black.png",
 	drawtype = "airlike",
 	walkable = false,
@@ -374,6 +402,7 @@ minetest.register_node("maptools:kill", {
 minetest.register_node("maptools:smoke", {
 	description = S("Smoke Block"),
 	range = 12,
+	stack_max = 9999,
 	tiles = {"maptools_smoke.png"},
 	drawtype = "allfaces_optional",
 	walkable = false,
@@ -386,6 +415,7 @@ minetest.register_node("maptools:smoke", {
 minetest.register_node("maptools:ladder", {
 	description = S("Fake Ladder"),
 	range = 12,
+	stack_max = 9999,
 	drawtype = "signlike",
 	tiles = {"default_ladder.png"},
 	inventory_image = "default_ladder.png",
@@ -405,6 +435,7 @@ minetest.register_node("maptools:ladder", {
 minetest.register_node("maptools:permanent_fire", {
 	description = S("Permanent Fire"),
 	range = 12,
+	stack_max = 9999,
 	drawtype = "plantlike",
 	paramtype = "light",
 	tiles = {{
@@ -423,6 +454,7 @@ minetest.register_node("maptools:permanent_fire", {
 minetest.register_node("maptools:fake_fire", {
 	description = S("Fake Fire"),
 	range = 12,
+	stack_max = 9999,
 	drawtype = "plantlike",
 	paramtype = "light",
 	tiles = {{
@@ -440,6 +472,7 @@ minetest.register_node("maptools:fake_fire", {
 minetest.register_node("maptools:igniter", {
 	drawtype = "airlike",
 	range = 12,
+	stack_max = 9999,
 	inventory_image = "default_steel_block.png^crosshair.png",
 	description = S("Igniter"),
 	paramtype = "light",
@@ -451,33 +484,10 @@ minetest.register_node("maptools:igniter", {
 	walkable = false,
 })
 
--- Items
-
-minetest.register_craftitem("maptools:copper_coin", {
-	description = S("Copper Coin"),
-	inventory_image = "maptools_copper_coin.png",
-	groups = {not_in_creative_inventory = maptools_creative},
-})
-
-minetest.register_craftitem("maptools:silver_coin", {
-	description = S("Silver Coin"),
-	inventory_image = "maptools_silver_coin.png",
-	groups = {not_in_creative_inventory = maptools_creative},
-})
-
-minetest.register_craftitem("maptools:gold_coin", {
-	description = S("Gold Coin"),
-	inventory_image = "maptools_gold_coin.png",
-	groups = {not_in_creative_inventory = maptools_creative},
-})
-
-minetest.register_craftitem("maptools:infinitefuel", {
-	description = S("Infinite Fuel"),
-	inventory_image = "maptools_infinitefuel.png",
-})
-
 minetest.register_node("maptools:superapple", {
 	description = S("Super Apple"),
+	range = 12,
+	stack_max = 9999,
 	drawtype = "plantlike",
 	visual_scale = 1.0,
 	tiles = {"maptools_superapple.png"},
@@ -488,6 +498,36 @@ minetest.register_node("maptools:superapple", {
 	groups = {fleshy=3, dig_immediate=3, not_in_creative_inventory = maptools_creative},
 	on_use = minetest.item_eat(20),
 	sounds = default.node_sound_defaults(),
+})
+
+-- Items
+
+minetest.register_craftitem("maptools:copper_coin", {
+	description = S("Copper Coin"),
+	inventory_image = "maptools_copper_coin.png",
+	stack_max = 9999,
+	groups = {not_in_creative_inventory = maptools_creative},
+})
+
+minetest.register_craftitem("maptools:silver_coin", {
+	description = S("Silver Coin"),
+	inventory_image = "maptools_silver_coin.png",
+	stack_max = 9999,
+	groups = {not_in_creative_inventory = maptools_creative},
+})
+
+minetest.register_craftitem("maptools:gold_coin", {
+	description = S("Gold Coin"),
+	inventory_image = "maptools_gold_coin.png",
+	stack_max = 9999,
+	groups = {not_in_creative_inventory = maptools_creative},
+})
+
+minetest.register_craftitem("maptools:infinitefuel", {
+	description = S("Infinite Fuel"),
+	inventory_image = "maptools_infinitefuel.png",
+	stack_max = 9999,
+	groups = {not_in_creative_inventory = maptools_creative},
 })
 
 -- Tools
@@ -508,7 +548,8 @@ minetest.register_tool("maptools:pick_admin", {
 			cracky =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
 			crumbly =     {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
 			snappy =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-		}
+		},
+		damage_groups = {fleshy = 1000},
 	},
 })
 
@@ -518,9 +559,9 @@ minetest.register_tool("maptools:pick_admin_with_drops", {
 	inventory_image = "maptools_adminpick.png",
 	groups = {not_in_creative_inventory = maptools_creative},
 	tool_capabilities = {
-		full_punch_interval = 0.1,
+		full_punch_interval = 0.35,
 		max_drop_level = 3,
-		groupcaps= {
+		groupcaps = {
 			unbreakable = {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
 			fleshy =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
 			choppy =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
@@ -528,14 +569,15 @@ minetest.register_tool("maptools:pick_admin_with_drops", {
 			cracky =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
 			crumbly =     {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
 			snappy =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-		}
+		},
+		damage_groups = {fleshy = 1000},
 	},
 })
 
 minetest.register_on_punchnode(function(pos, node, puncher)
 	if puncher:get_wielded_item():get_name() == "maptools:pick_admin"
 	and minetest.env:get_node(pos).name ~= "air" then
-		minetest.log("action", minetest.env:get_node(pos).name .. " was removed using an Admin Pickaxe.")
+		minetest.log("action", minetest.env:get_node(pos).name .. " was removed using an Admin Pickaxe at " .. minetest.pos_to_string(pos) .. ".")
 		minetest.env:remove_node(pos) -- The node is removed directly, which means it even works on non-empty containers and group-less nodes.
 	end
 end)
