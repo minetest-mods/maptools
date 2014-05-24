@@ -182,10 +182,11 @@ minetest.register_node("maptools:grass", {
 	range = 12,
 	stack_max = 10000,
 	tiles = {"default_grass.png", "default_dirt.png", "default_dirt.png^default_grass_side.png"},
+	paramtype2 = "facedir",
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative},
 	sounds = default.node_sound_dirt_defaults({
-		footstep = {name="default_grass_footstep", gain=0.4},
+		footstep = {name="default_grass_footstep", gain = 0.4},
 	}),
 })
 
@@ -200,6 +201,26 @@ minetest.register_node("maptools:fullgrass", {
 		footstep = {name="default_grass_footstep", gain=0.4},
 	}),
 })
+
+for slab_num=1,3,1 do
+	minetest.register_node("maptools:slab_grass_" .. slab_num * 4, {
+		description = S("Grass Slab"),
+		range = 12,
+		stack_max = 10000,
+		tiles = {"default_grass.png", "default_dirt.png", "default_dirt.png^maptools_grass_side_" .. slab_num * 4 .. ".png"},
+		drawtype = "nodebox",
+		node_box = {
+			type = "fixed",
+			fixed = {-0.5, -0.5, -0.5, 0.5, -0.5 + slab_num * 0.25, 0.5},
+		},
+		sunlight_propagates = true,
+		paramtype = "light",
+		paramtype2 = "facedir",
+		drop = "",
+		groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative},
+		sounds = default.node_sound_dirt_defaults({footstep = {name="default_grass_footstep", gain = 0.4}}),
+	})
+end
 
 minetest.register_node("maptools:cobble", {
 	description = S("Unbreakable Cobblestone"),
