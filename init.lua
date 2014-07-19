@@ -587,6 +587,10 @@ minetest.register_node("maptools:superapple", {
 	inventory_image = "maptools_superapple.png",
 	paramtype = "light",
 	sunlight_propagates = true,
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.2, -0.5, -0.2, 0.2, 0, 0.2}
+	},
 	walkable = false,
 	groups = {fleshy=3, dig_immediate=3, not_in_creative_inventory = maptools_creative},
 	on_use = minetest.item_eat(20),
