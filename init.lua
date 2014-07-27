@@ -11,6 +11,7 @@ if (minetest.get_modpath("intllib")) then
 end
 
 dofile(minetest.get_modpath("maptools").."/aliases.lua")
+dofile(minetest.get_modpath("maptools").."/default_nodes.lua")
 
 --[[
 Map Tools by Calinou
@@ -59,199 +60,6 @@ minetest.register_node("maptools:white", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("maptools:stone", {
-	description = S("Unbreakable Stone"),
-	range = 12,
-	stack_max = 10000,
-	tiles = {"default_stone.png"},
-	drop = "",
-	groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative},
-	sounds = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("maptools:tree", {
-	description = S("Unbreakable Tree"),
-	range = 12,
-	stack_max = 10000,
-	tiles = {"default_tree.png"},
-	drop = "",
-	groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative},
-	sounds = default.node_sound_wood_defaults(),
-})
-
-minetest.register_node("maptools:dirt", {
-	description = S("Unbreakable Dirt"),
-	range = 12,
-	stack_max = 10000,
-	tiles = {"default_dirt.png"},
-	drop = "",
-	groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative},
-	sounds = default.node_sound_dirt_defaults(),
-})
-
-minetest.register_node("maptools:wood", {
-	description = S("Unbreakable Wooden Planks"),
-	range = 12,
-	stack_max = 10000,
-	tiles = {"default_wood.png"},
-	drop = "",
-	groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative},
-	sounds = default.node_sound_wood_defaults(),
-})
-
-minetest.register_node("maptools:glass", {
-	description = S("Unbreakable Glass"),
-	range = 12,
-	stack_max = 10000,
-	drawtype = "glasslike",
-	tiles = {"default_glass.png"},
-	paramtype = "light",
-	sunlight_propagates = true,
-	drop = "",
-	groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative},
-	sounds = default.node_sound_glass_defaults(),
-})
-
-minetest.register_node("maptools:leaves", {
-	description = S("Unbreakable Leaves"),
-	range = 12,
-	stack_max = 10000,
-	drawtype = "allfaces_optional",
-	tiles = {"default_leaves.png"},
-	paramtype = "light",
-	drop = "",
-	groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative},
-	sounds = default.node_sound_leaves_defaults(),
-})
-
-minetest.register_node("maptools:sand", {
-	description = S("Unbreakable Sand"),
-	range = 12,
-	stack_max = 10000,
-	tiles = {"default_sand.png"},
-	drop = "",
-	groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative},
-	sounds = default.node_sound_sand_defaults(),
-})
-
-minetest.register_node("maptools:gravel", {
-	description = S("Unbreakable Gravel"),
-	range = 12,
-	stack_max = 10000,
-	tiles = {"default_gravel.png"},
-	drop = "",
-	groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative},
-	sounds = default.node_sound_dirt_defaults({
-		footstep = {name="default_gravel_footstep", gain=0.35},
-		dug = {name="default_gravel_footstep", gain=0.6},
-	}),
-})
-
-minetest.register_node("maptools:desert_sand", {
-	description = S("Unbreakable Desert Sand"),
-	range = 12,
-	stack_max = 10000,
-	tiles = {"default_desert_sand.png"},
-	drop = "",
-	groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative},
-	sounds = default.node_sound_sand_defaults(),
-})
-
-minetest.register_node("maptools:sandstone", {
-	description = S("Unbreakable Sandstone"),
-	range = 12,
-	stack_max = 10000,
-	tiles = {"default_sandstone.png"},
-	drop = "",
-	groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative},
-	sounds = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("maptools:desert_stone", {
-	description = S("Unbreakable Desert Stone"),
-	range = 12,
-	stack_max = 10000,
-	tiles = {"default_desert_stone.png"},
-	drop = "",
-	groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative},
-	sounds = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("maptools:grass", {
-	description = S("Unbreakable Dirt with Grass"),
-	range = 12,
-	stack_max = 10000,
-	tiles = {"default_grass.png", "default_dirt.png", "default_dirt.png^default_grass_side.png"},
-	paramtype2 = "facedir",
-	drop = "",
-	groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative},
-	sounds = default.node_sound_dirt_defaults({
-		footstep = {name="default_grass_footstep", gain = 0.4},
-	}),
-})
-
-minetest.register_node("maptools:fullgrass", {
-	description = S("Unbreakable Full Grass"),
-	range = 12,
-	stack_max = 10000,
-	tiles = {"default_grass.png"},
-	drop = "",
-	groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative},
-	sounds = default.node_sound_dirt_defaults({
-		footstep = {name="default_grass_footstep", gain=0.4},
-	}),
-})
-
-for slab_num=1,3,1 do
-	minetest.register_node("maptools:slab_grass_" .. slab_num * 4, {
-		description = S("Grass Slab"),
-		range = 12,
-		stack_max = 10000,
-		tiles = {"default_grass.png", "default_dirt.png", "default_dirt.png^maptools_grass_side_" .. slab_num * 4 .. ".png"},
-		drawtype = "nodebox",
-		node_box = {
-			type = "fixed",
-			fixed = {-0.5, -0.5, -0.5, 0.5, -0.5 + slab_num * 0.25, 0.5},
-		},
-		sunlight_propagates = true,
-		paramtype = "light",
-		paramtype2 = "facedir",
-		drop = "",
-		groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative},
-		sounds = default.node_sound_dirt_defaults({footstep = {name="default_grass_footstep", gain = 0.4}}),
-	})
-end
-
-minetest.register_node("maptools:cobble", {
-	description = S("Unbreakable Cobblestone"),
-	range = 12,
-	stack_max = 10000,
-	tiles = {"default_cobble.png"},
-	drop = "",
-	groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative},
-	sounds = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("maptools:mossycobble", {
-	description = S("Unbreakable Mossy Cobblestone"),
-	range = 12,
-	stack_max = 10000,
-	tiles = {"default_mossycobble.png"},
-	drop = "",
-	groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative},
-	sounds = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("maptools:brick", {
-	description = S("Unbreakable Brick"),
-	range = 12,
-	stack_max = 10000,
-	tiles = {"default_brick.png"},
-	drop = "",
-	groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative},
-	sounds = default.node_sound_stone_defaults(),
-})
-
 minetest.register_node("maptools:playerclip", {
 	description = S("Player Clip"),
 	range = 12,
@@ -261,6 +69,26 @@ minetest.register_node("maptools:playerclip", {
 	paramtype = "light",
 	pointable = false,
 	sunlight_propagates = true,
+	drop = "",
+	groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative},
+})
+
+minetest.register_node("maptools:fake_walkable", {
+	description = S("Player Clip"),
+	drawtype = "nodebox",
+	range = 12,
+	stack_max = 10000,
+	inventory_image = "default_steel_block.png^dye_green.png",
+	drawtype = "airlike",
+	paramtype = "light",
+	pointable = false,
+	sunlight_propagates = true,
+	node_box = {
+		type = "fixed",
+		fixed = {
+			{0, 0, 0, 0, 0, 0},
+		},
+	},
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative},
 })
@@ -276,6 +104,26 @@ minetest.register_node("maptools:fullclip", {
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative},
 })
+
+minetest.register_node("maptools:fake_walkable_pointable", {
+	description = S("Player Clip"),
+	drawtype = "nodebox",
+	range = 12,
+	stack_max = 10000,
+	inventory_image = "default_steel_block.png^dye_green.png",
+	drawtype = "airlike",
+	paramtype = "light",
+	sunlight_propagates = true,
+	node_box = {
+		type = "fixed",
+		fixed = {
+			{0, 0, 0, 0, 0, 0},
+		},
+	},
+	drop = "",
+	groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative},
+})
+
 minetest.register_node("maptools:ignore_like", {
 	description = S("Ignore-like"),
 	range = 12,
@@ -683,5 +531,5 @@ minetest.register_on_punchnode(function(pos, node, puncher)
 end)
 
 if minetest.setting_getbool("log_mods") then
-	print(S("[maptools] loaded."))
+	minetest.log("action", "Carbone: [maptools] loaded.")
 end
