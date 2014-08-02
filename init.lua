@@ -525,7 +525,7 @@ minetest.register_tool("maptools:pick_admin_with_drops", {
 minetest.register_on_punchnode(function(pos, node, puncher)
 	if puncher:get_wielded_item():get_name() == "maptools:pick_admin"
 	and minetest.get_node(pos).name ~= "air" then
-		minetest.log("action", minetest.get_node(pos).name .. " was removed using an Admin Pickaxe at " .. minetest.pos_to_string(pos) .. ".")
+		minetest.log("action", puncher:get_player_name() .. " digs " .. minetest.get_node(pos).name .. " at " .. minetest.pos_to_string(pos) .. " using an Admin Pickaxe.")
 		minetest.remove_node(pos) -- The node is removed directly, which means it even works on non-empty containers and group-less nodes.
 	end
 end)
