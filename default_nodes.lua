@@ -362,3 +362,25 @@ minetest.register_node("maptools:diamondblock", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative},
 	sounds = default.node_sound_stone_defaults(),
 })
+
+-- Farming:
+
+minetest.register_node("maptools:soil_wet", {
+	description = "Wet Soil",
+	range = 12,
+	stack_max = 10000,
+	tiles = {"farming_soil_wet.png", "farming_soil_wet_side.png"},
+	drop = "",
+	groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative, soil = 3, wet = 1, grassland = 1},
+	sounds = default.node_sound_dirt_defaults(),
+})
+
+minetest.register_node("maptools:desert_sand_soil_wet", {
+	description = "Wet Desert Sand Soil",
+	range = 12,
+	stack_max = 10000,
+	drop = "",
+	tiles = {"farming_desert_sand_soil_wet.png", "farming_desert_sand_soil_wet_side.png"},
+	groups = {unbreakable = 1, not_in_creative_inventory = maptools_creative, soil = 3, wet = 1, desert = 1},
+	sounds = default.node_sound_sand_defaults(),
+})
