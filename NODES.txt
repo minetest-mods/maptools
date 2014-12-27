@@ -1,4 +1,4 @@
-*** Item names for spawning the items using /give or /giveme ***
+** Item names for spawning the items using /give or /giveme **
 
 Items:
 
@@ -9,7 +9,7 @@ Purple pickaxe, infinite durability, mines everything including unbreakable bloc
 Fuel lasting for a (near)-infinite time. Don't worry about the "near" - it lasts for about 50 in-real-life years.
 
 - superapple
-An apple which heals all 10 hearts.
+An apple which heals by 20 HP.
 
 - copper_coin
 - silver_coin
