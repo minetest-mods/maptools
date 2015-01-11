@@ -4,7 +4,7 @@
 By Calinou.
 
 Copyright (c) 2012-2014 Calinou and contributors.
-Licensed under the zlib license. See LICENSE.txt for more information.
+Licensed under the zlib license. See LICENSE.md for more information.
 ======================================================================
 --]]
 

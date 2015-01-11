@@ -1,3 +1,12 @@
+--[[
+======================================================================
+This file is part of Map Tools.
+
+Copyright (c) 2012-2015 Calinou and contributors.
+Licensed under the zlib license. See LICENSE.md for more information.
+======================================================================
+--]]
+
 maptools.config = {}
 
 local function getbool_default(setting, default)
