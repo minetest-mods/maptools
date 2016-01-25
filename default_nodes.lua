@@ -372,7 +372,7 @@ minetest.register_node("maptools:soil_wet", {
 	description = "Wet Soil",
 	range = 12,
 	stack_max = 10000,
-	tiles = {"farming_soil_wet.png", "farming_soil_wet_side.png"},
+	tiles = {"default_dirt.png^farming_soil_wet.png", "default_dirt.png^farming_soil_wet_side.png"},
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative, soil = 3, wet = 1, grassland = 1},
 	sounds = default.node_sound_dirt_defaults(),
