@@ -242,7 +242,7 @@ minetest.register_node("maptools:lightbulb", {
 	drawtype = "airlike",
 	walkable = false,
 	pointable = false,
-	light_source = 15,
+	light_source = 14,
 	paramtype = "light",
 	sunlight_propagates = true,
 	drop = "",
