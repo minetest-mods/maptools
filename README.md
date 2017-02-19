@@ -1,7 +1,7 @@
 Map Tools
 =========
 
-Map Tools for Minetest <http://minetest.net>, a free/libre infinite
+Map Tools for [Minetest](http://minetest.net), a free and open source infinite
 world block sandbox game.
 
 To install, just clone this repository into your "mods" directory.

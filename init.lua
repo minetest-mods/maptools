@@ -3,7 +3,7 @@
 ** Map Tools **
 By Calinou.
 
-Copyright (c) 2012-2015 Calinou and contributors.
+Copyright (c) 2012-2017 Hugo Locurcio and contributors.
 Licensed under the zlib license. See LICENSE.md for more information.
 =====================================================================
 --]]
