@@ -16,6 +16,9 @@ minetest.register_node(":default:cloud", {
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_defaults(),
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 
 -- Nodes
@@ -30,6 +33,9 @@ minetest.register_node("maptools:black", {
 	post_effect_color = {a=255, r=0, g=0, b=0},
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_stone_defaults(),
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 
 minetest.register_node("maptools:white", {
@@ -41,6 +47,9 @@ minetest.register_node("maptools:white", {
 	post_effect_color = {a=255, r=128, g=128, b=128},
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_stone_defaults(),
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 
 minetest.register_node("maptools:playerclip", {
@@ -54,6 +63,9 @@ minetest.register_node("maptools:playerclip", {
 	sunlight_propagates = true,
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 
 minetest.register_node("maptools:fake_walkable", {
@@ -74,6 +86,9 @@ minetest.register_node("maptools:fake_walkable", {
 	},
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 
 minetest.register_node("maptools:fullclip", {
@@ -86,6 +101,9 @@ minetest.register_node("maptools:fullclip", {
 	sunlight_propagates = true,
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 
 minetest.register_node("maptools:fake_walkable_pointable", {
@@ -105,6 +123,9 @@ minetest.register_node("maptools:fake_walkable_pointable", {
 	},
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 
 minetest.register_node("maptools:ignore_like", {
@@ -117,6 +138,9 @@ minetest.register_node("maptools:ignore_like", {
 	sunlight_propagates = true,
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 
 minetest.register_node("maptools:ignore_like_no_clip", {
@@ -130,6 +154,9 @@ minetest.register_node("maptools:ignore_like_no_clip", {
 	sunlight_propagates = true,
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 
 
@@ -144,6 +171,9 @@ minetest.register_node("maptools:ignore_like_no_point", {
 	sunlight_propagates = true,
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 
 minetest.register_node("maptools:ignore_like_no_clip_no_point", {
@@ -158,6 +188,9 @@ minetest.register_node("maptools:ignore_like_no_clip_no_point", {
 	sunlight_propagates = true,
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 
 minetest.register_node("maptools:fullclip_face", {
@@ -176,6 +209,9 @@ minetest.register_node("maptools:fullclip_face", {
 	},
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative, fall_damage_add_percent=-100},
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 
 minetest.register_node("maptools:playerclip_bottom", {
@@ -194,6 +230,9 @@ minetest.register_node("maptools:playerclip_bottom", {
 	},
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative, fall_damage_add_percent=-100},
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 
 minetest.register_node("maptools:playerclip_top", {
@@ -212,6 +251,9 @@ minetest.register_node("maptools:playerclip_top", {
 	},
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative, fall_damage_add_percent=-100},
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 
 for pusher_num=1,10,1 do
@@ -231,6 +273,9 @@ minetest.register_node("maptools:pusher_" .. pusher_num, {
 	},
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative, fall_damage_add_percent=-100, bouncy=pusher_num*100},
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 end
 
@@ -247,6 +292,9 @@ minetest.register_node("maptools:lightbulb", {
 	sunlight_propagates = true,
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 
 minetest.register_node("maptools:nobuild", {
@@ -261,6 +309,9 @@ minetest.register_node("maptools:nobuild", {
 	sunlight_propagates = true,
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 
 minetest.register_node("maptools:nointeract", {
@@ -274,6 +325,9 @@ minetest.register_node("maptools:nointeract", {
 	sunlight_propagates = true,
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 
 minetest.register_node("maptools:climb", {
@@ -289,6 +343,9 @@ minetest.register_node("maptools:climb", {
 	sunlight_propagates = true,
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 
 for damage_num=1,5,1 do
@@ -305,6 +362,9 @@ minetest.register_node("maptools:damage_" .. damage_num, {
 	sunlight_propagates = true,
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 end
 
@@ -321,6 +381,9 @@ minetest.register_node("maptools:kill", {
 	sunlight_propagates = true,
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 
 minetest.register_node("maptools:smoke", {
@@ -334,6 +397,9 @@ minetest.register_node("maptools:smoke", {
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	post_effect_color = {a=192, r=96, g=96, b=96},
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 
 minetest.register_node("maptools:ladder", {
@@ -354,6 +420,9 @@ minetest.register_node("maptools:ladder", {
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_wood_defaults(),
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 
 minetest.register_node("maptools:permanent_fire", {
@@ -373,6 +442,9 @@ minetest.register_node("maptools:permanent_fire", {
 	sunlight_propagates = true,
 	walkable = false,
 	damage_per_second = 4,
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 
 minetest.register_node("maptools:fake_fire", {
@@ -391,6 +463,9 @@ minetest.register_node("maptools:fake_fire", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sunlight_propagates = true,
 	walkable = false,
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 
 minetest.register_node("maptools:igniter", {
@@ -406,6 +481,9 @@ minetest.register_node("maptools:igniter", {
 	sunlight_propagates = true,
 	pointable = false,
 	walkable = false,
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
 
 minetest.register_node("maptools:superapple", {
@@ -426,4 +504,7 @@ minetest.register_node("maptools:superapple", {
 	groups = {fleshy=3, dig_immediate=3, not_in_creative_inventory = maptools.creative},
 	on_use = minetest.item_eat(20),
 	sounds = default.node_sound_defaults(),
+	on_drop = function(itemstack, dropper, pos)
+		return
+	end,
 })
