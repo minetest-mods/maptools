@@ -18,6 +18,7 @@ minetest.register_node("maptools:stone", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_stone_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -31,6 +32,7 @@ minetest.register_node("maptools:stonebrick", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_stone_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -45,6 +47,7 @@ minetest.register_node("maptools:tree", {
 	sounds = default.node_sound_wood_defaults(),
 	on_place = minetest.rotate_node,
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -59,6 +62,7 @@ minetest.register_node("maptools:jungletree", {
 	sounds = default.node_sound_wood_defaults(),
 	on_place = minetest.rotate_node,
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -73,6 +77,7 @@ minetest.register_node("maptools:cactus", {
 	sounds = default.node_sound_wood_defaults(),
 	on_place = minetest.rotate_node,
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -96,6 +101,7 @@ minetest.register_node("maptools:papyrus", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_leaves_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -109,6 +115,7 @@ minetest.register_node("maptools:dirt", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_dirt_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -122,6 +129,7 @@ minetest.register_node("maptools:wood", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_wood_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -135,6 +143,7 @@ minetest.register_node("maptools:junglewood", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_wood_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -151,6 +160,7 @@ minetest.register_node("maptools:glass", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_glass_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -166,6 +176,7 @@ minetest.register_node("maptools:leaves", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_leaves_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -179,6 +190,7 @@ minetest.register_node("maptools:sand", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_sand_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -195,6 +207,7 @@ minetest.register_node("maptools:gravel", {
 		dug = {name="default_gravel_footstep", gain=0.6},
 	}),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -208,6 +221,7 @@ minetest.register_node("maptools:clay", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_dirt_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -221,6 +235,7 @@ minetest.register_node("maptools:desert_sand", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_sand_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -234,6 +249,7 @@ minetest.register_node("maptools:sandstone", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_stone_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -247,6 +263,7 @@ minetest.register_node("maptools:sandstone_brick", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_stone_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -260,6 +277,7 @@ minetest.register_node("maptools:desert_stone", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_stone_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -273,6 +291,7 @@ minetest.register_node("maptools:desert_cobble", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_stone_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -286,6 +305,7 @@ minetest.register_node("maptools:desert_stonebrick", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_stone_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -302,6 +322,7 @@ minetest.register_node("maptools:grass", {
 		footstep = {name="default_grass_footstep", gain = 0.4},
 	}),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -317,6 +338,7 @@ minetest.register_node("maptools:fullgrass", {
 		footstep = {name="default_grass_footstep", gain=0.4},
 	}),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -339,7 +361,8 @@ for slab_num = 1,3,1 do
 		groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 		sounds = default.node_sound_dirt_defaults({footstep = {name="default_grass_footstep", gain = 0.4}}),
 		on_drop = function(itemstack, dropper, pos)
-			return
+			maptools.msg(dropper)
+		return
 		end,
 	})
 end
@@ -353,6 +376,7 @@ minetest.register_node("maptools:cobble", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_stone_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -366,6 +390,7 @@ minetest.register_node("maptools:mossycobble", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_stone_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -379,6 +404,7 @@ minetest.register_node("maptools:brick", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_stone_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -392,6 +418,7 @@ minetest.register_node("maptools:coalblock", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_stone_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -406,6 +433,7 @@ minetest.register_node("maptools:steelblock", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_stone_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -419,6 +447,7 @@ minetest.register_node("maptools:goldblock", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_stone_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -432,6 +461,7 @@ minetest.register_node("maptools:copperblock", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_stone_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -445,6 +475,7 @@ minetest.register_node("maptools:bronzeblock", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_stone_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -458,6 +489,7 @@ minetest.register_node("maptools:diamondblock", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_stone_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -473,6 +505,7 @@ minetest.register_node("maptools:soil_wet", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative, soil = 3, wet = 1, grassland = 1},
 	sounds = default.node_sound_dirt_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
@@ -486,6 +519,7 @@ minetest.register_node("maptools:desert_sand_soil_wet", {
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative, soil = 3, wet = 1, desert = 1},
 	sounds = default.node_sound_sand_defaults(),
 	on_drop = function(itemstack, dropper, pos)
+		maptools.msg(dropper)
 		return
 	end,
 })
