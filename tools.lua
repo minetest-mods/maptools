@@ -28,9 +28,7 @@ minetest.register_tool("maptools:pick_admin", {
 		},
 		damage_groups = {fleshy = 1000},
 	},
-	on_drop = function(itemstack, dropper, pos)
-		maptools.msg(dropper)
-		return
+	on_drop = maptools.drop_msg
 	end,
 })
 
@@ -53,9 +51,7 @@ minetest.register_tool("maptools:pick_admin_with_drops", {
 		},
 		damage_groups = {fleshy = 1000},
 	},
-	on_drop = function(itemstack, dropper, pos)
-		maptools.msg(dropper)
-		return
+	on_drop = maptools.drop_msg
 	end,
 })
 
