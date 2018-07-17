@@ -20,7 +20,7 @@ maptools.intllib = S
 
 local modpath = minetest.get_modpath("maptools")
 
-maptools.msg = function(player)
+maptools.drop_msg = function(itemstack, player)
 	local name = player:get_player_name()
 	minetest.chat_send_player(name, S("[maptools] tools/nodes do not drop!"))
 end
