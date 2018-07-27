@@ -20,6 +20,11 @@ maptools.intllib = S
 
 local modpath = minetest.get_modpath("maptools")
 
+maptools.drop_msg = function(itemstack, player)
+	local name = player:get_player_name()
+	minetest.chat_send_player(name, S("[maptools] tools/nodes do not drop!"))
+end
+
 dofile(modpath .. "/config.lua")
 dofile(modpath .. "/aliases.lua")
 dofile(modpath .. "/craftitems.lua")

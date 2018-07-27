@@ -28,6 +28,7 @@ minetest.register_tool("maptools:pick_admin", {
 		},
 		damage_groups = {fleshy = 1000},
 	},
+	on_drop = maptools.drop_msg
 })
 
 minetest.register_tool("maptools:pick_admin_with_drops", {
@@ -49,6 +50,7 @@ minetest.register_tool("maptools:pick_admin_with_drops", {
 		},
 		damage_groups = {fleshy = 1000},
 	},
+	on_drop = maptools.drop_msg
 })
 
 minetest.register_on_punchnode(function(pos, node, puncher)
