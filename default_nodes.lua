@@ -47,7 +47,11 @@ minetest.register_node("maptools:jungletree", {
 	description = S("Unbreakable Jungle Tree"),
 	range = 12,
 	stack_max = 10000,
-	tiles = {"default_jungletree_top.png", "default_jungletree_top.png", "default_jungletree.png"},
+	tiles = {
+		"default_jungletree_top.png",
+		"default_jungletree_top.png",
+		"default_jungletree.png",
+	},
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	sounds = default.node_sound_wood_defaults(),
@@ -254,7 +258,11 @@ minetest.register_node("maptools:grass", {
 	description = S("Unbreakable Dirt with Grass"),
 	range = 12,
 	stack_max = 10000,
-	tiles = {"default_grass.png", "default_dirt.png", "default_dirt.png^default_grass_side.png"},
+	tiles = {
+		"default_grass.png",
+		"default_dirt.png",
+		"default_dirt.png^default_grass_side.png",
+	},
 	paramtype2 = "facedir",
 	drop = "",
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
@@ -282,7 +290,11 @@ for slab_num = 1,3,1 do
 		description = S("Grass Slab"),
 		range = 12,
 		stack_max = 10000,
-		tiles = {"default_grass.png", "default_dirt.png", "default_dirt.png^maptools_grass_side_" .. slab_num * 4 .. ".png"},
+		tiles = {
+			"default_grass.png",
+			"default_dirt.png",
+			"default_dirt.png^maptools_grass_side_" .. slab_num * 4 .. ".png",
+		},
 		drawtype = "nodebox",
 		node_box = {
 			type = "fixed",
@@ -293,7 +305,9 @@ for slab_num = 1,3,1 do
 		paramtype2 = "facedir",
 		drop = "",
 		groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
-		sounds = default.node_sound_dirt_defaults({footstep = {name="default_grass_footstep", gain = 0.4}}),
+		sounds = default.node_sound_dirt_defaults(
+			{footstep = {name="default_grass_footstep", gain = 0.4}}
+		),
 		on_drop = maptools.drop_msg
 	})
 end
@@ -404,9 +418,18 @@ minetest.register_node("maptools:soil_wet", {
 	description = "Wet Soil",
 	range = 12,
 	stack_max = 10000,
-	tiles = {"default_dirt.png^farming_soil_wet.png", "default_dirt.png^farming_soil_wet_side.png"},
+	tiles = {
+		"default_dirt.png^farming_soil_wet.png",
+		"default_dirt.png^farming_soil_wet_side.png",
+	},
 	drop = "",
-	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative, soil = 3, wet = 1, grassland = 1},
+	groups = {
+		unbreakable = 1,
+		not_in_creative_inventory = maptools.creative,
+		soil = 3,
+		wet = 1,
+		grassland = 1,
+	},
 	sounds = default.node_sound_dirt_defaults(),
 	on_drop = maptools.drop_msg
 })
@@ -417,7 +440,13 @@ minetest.register_node("maptools:desert_sand_soil_wet", {
 	stack_max = 10000,
 	drop = "",
 	tiles = {"farming_desert_sand_soil_wet.png", "farming_desert_sand_soil_wet_side.png"},
-	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative, soil = 3, wet = 1, desert = 1},
+	groups = {
+		unbreakable = 1,
+		not_in_creative_inventory = maptools.creative,
+		soil = 3,
+		wet = 1,
+		desert = 1,
+	},
 	sounds = default.node_sound_sand_defaults(),
 	on_drop = maptools.drop_msg
 })

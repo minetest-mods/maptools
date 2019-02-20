@@ -62,7 +62,6 @@ minetest.register_node("maptools:playerclip", {
 
 minetest.register_node("maptools:fake_walkable", {
 	description = S("Player Clip"),
-	drawtype = "nodebox",
 	range = 12,
 	stack_max = 10000,
 	inventory_image = "default_steel_block.png^dye_green.png",
@@ -96,7 +95,6 @@ minetest.register_node("maptools:fullclip", {
 
 minetest.register_node("maptools:fake_walkable_pointable", {
 	description = S("Player Clip"),
-	drawtype = "nodebox",
 	range = 12,
 	stack_max = 10000,
 	inventory_image = "default_steel_block.png^dye_green.png",
@@ -186,7 +184,11 @@ minetest.register_node("maptools:fullclip_face", {
 		fixed = {-0.5, -0.5, -0.5, 0.5, -0.4999, 0.5},
 	},
 	drop = "",
-	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative, fall_damage_add_percent=-100},
+	groups = {
+		unbreakable = 1,
+		not_in_creative_inventory = maptools.creative,
+		fall_damage_add_percent = -100,
+	},
 	on_drop = maptools.drop_msg
 })
 
@@ -205,7 +207,11 @@ minetest.register_node("maptools:playerclip_bottom", {
 		fixed = {-0.5, -0.5, -0.5, 0.5, -0.4999, 0.5},
 	},
 	drop = "",
-	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative, fall_damage_add_percent=-100},
+	groups = {
+		unbreakable = 1,
+		not_in_creative_inventory = maptools.creative,
+		fall_damage_add_percent = -100,
+	},
 	on_drop = maptools.drop_msg
 })
 
@@ -224,7 +230,11 @@ minetest.register_node("maptools:playerclip_top", {
 		fixed = {-0.5, 0.4999, -0.5, 0.5, 0.5, 0.5},
 	},
 	drop = "",
-	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative, fall_damage_add_percent=-100},
+	groups = {
+		unbreakable = 1,
+		not_in_creative_inventory = maptools.creative,
+		fall_damage_add_percent = -100,
+	},
 	on_drop = maptools.drop_msg
 })
 
@@ -244,7 +254,12 @@ minetest.register_node("maptools:pusher_" .. pusher_num, {
 		fixed = {-0.5, -0.5, -0.5, 0.5, -0.4999, 0.5},
 	},
 	drop = "",
-	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative, fall_damage_add_percent=-100, bouncy=pusher_num*100},
+	groups = {
+		unbreakable = 1,
+		not_in_creative_inventory = maptools.creative,
+		fall_damage_add_percent = -100,
+		bouncy = pusher_num * 100,
+	},
 	on_drop = maptools.drop_msg
 })
 end
@@ -422,7 +437,6 @@ minetest.register_node("maptools:igniter", {
 	drawtype = "airlike",
 	range = 12,
 	stack_max = 10000,
-	inventory_image = "default_steel_block.png^crosshair.png",
 	description = S("Igniter"),
 	paramtype = "light",
 	inventory_image = "fire_basic_flame.png",
