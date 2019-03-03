@@ -5,11 +5,11 @@ Copyright © 2012-2019 Hugo Locurcio and contributors.
 Licensed under the zlib license. See LICENSE.md for more information.
 --]]
 
-local S = maptools.intllib
+local S = maptools.S
 
 maptools.creative = maptools.config["hide_from_creative_inventory"]
 
--- Redefine cloud so that the admin pickaxe can mine it:
+-- Redefine cloud so that the admin pickaxe can mine it
 minetest.register_node(":default:cloud", {
 	description = S("Cloud"),
 	tiles = {"default_cloud.png"},
@@ -20,7 +20,6 @@ minetest.register_node(":default:cloud", {
 })
 
 -- Nodes
--- =====
 
 minetest.register_node("maptools:black", {
 	description = S("Black"),
@@ -239,29 +238,29 @@ minetest.register_node("maptools:playerclip_top", {
 })
 
 for pusher_num=1,10,1 do
-minetest.register_node("maptools:pusher_" .. pusher_num, {
-	description = S("Pusher (%s)"):format(pusher_num),
-	range = 12,
-	stack_max = 10000,
-	inventory_image = "default_steel_block.png^default_apple.png",
-	drawtype = "nodebox",
-	tiles = {"invisible.png"},
-	paramtype = "light",
-	paramtype2 = "facedir",
-	sunlight_propagates = true,
-	node_box = {
-		type = "fixed",
-		fixed = {-0.5, -0.5, -0.5, 0.5, -0.4999, 0.5},
-	},
-	drop = "",
-	groups = {
-		unbreakable = 1,
-		not_in_creative_inventory = maptools.creative,
-		fall_damage_add_percent = -100,
-		bouncy = pusher_num * 100,
-	},
-	on_drop = maptools.drop_msg
-})
+	minetest.register_node("maptools:pusher_" .. pusher_num, {
+		description = S("Pusher (%s)"):format(pusher_num),
+		range = 12,
+		stack_max = 10000,
+		inventory_image = "default_steel_block.png^default_apple.png",
+		drawtype = "nodebox",
+		tiles = {"invisible.png"},
+		paramtype = "light",
+		paramtype2 = "facedir",
+		sunlight_propagates = true,
+		node_box = {
+			type = "fixed",
+			fixed = {-0.5, -0.5, -0.5, 0.5, -0.4999, 0.5},
+		},
+		drop = "",
+		groups = {
+			unbreakable = 1,
+			not_in_creative_inventory = maptools.creative,
+			fall_damage_add_percent = -100,
+			bouncy = pusher_num * 100,
+		},
+		on_drop = maptools.drop_msg
+	})
 end
 
 minetest.register_node("maptools:lightbulb", {

@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+
+- Update intllib support to avoid using deprecated functions.
+
 ## 1.0.0 - 2017-02-19
 
 - Initial versioned release.
