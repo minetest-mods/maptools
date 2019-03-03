@@ -9,48 +9,37 @@ local S = maptools.S
 
 maptools.creative = maptools.config["hide_from_creative_inventory"]
 
+local pick_admin_toolcaps = {
+	full_punch_interval = 0.1,
+	max_drop_level = 3,
+	groupcaps = {
+		unbreakable = {times = {[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
+		fleshy = {times = {[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
+		choppy = {times = {[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
+		bendy = {times = {[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
+		cracky = {times = {[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
+		crumbly = {times = {[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
+		snappy = {times = {[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
+	},
+	damage_groups = {fleshy = 1000},
+}
+
 minetest.register_tool("maptools:pick_admin", {
 	description = S("Admin Pickaxe"),
-	range = 12,
+	range = 20,
 	inventory_image = "maptools_adminpick.png",
 	groups = {not_in_creative_inventory = maptools.creative},
-	tool_capabilities = {
-		full_punch_interval = 0.1,
-		max_drop_level = 3,
-		groupcaps= {
-			unbreakable = {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-			fleshy =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-			choppy =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-			bendy =       {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-			cracky =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-			crumbly =     {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-			snappy =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-		},
-		damage_groups = {fleshy = 1000},
-	},
-	on_drop = maptools.drop_msg
+	tool_capabilities = pick_admin_toolcaps,
+	on_drop = maptools.drop_msg,
 })
 
 minetest.register_tool("maptools:pick_admin_with_drops", {
 	description = S("Admin Pickaxe with Drops"),
-	range = 12,
+	range = 20,
 	inventory_image = "maptools_adminpick_with_drops.png",
 	groups = {not_in_creative_inventory = maptools.creative},
-	tool_capabilities = {
-		full_punch_interval = 0.35,
-		max_drop_level = 3,
-		groupcaps = {
-			unbreakable = {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-			fleshy =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-			choppy =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-			bendy =       {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-			cracky =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-			crumbly =     {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-			snappy =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-		},
-		damage_groups = {fleshy = 1000},
-	},
-	on_drop = maptools.drop_msg
+	tool_capabilities = pick_admin_toolcaps,
+	on_drop = maptools.drop_msg,
 })
 
 minetest.register_on_punchnode(function(pos, node, puncher)
