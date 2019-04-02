@@ -27,7 +27,3 @@ maptools.drop_msg = function(itemstack, player)
 	local name = player:get_player_name()
 	minetest.chat_send_player(name, S("[maptools] tools/nodes do not drop!"))
 end
-
-if minetest.setting_getbool("log_mods") then
-	minetest.log("action", S("[maptools] loaded."))
-end

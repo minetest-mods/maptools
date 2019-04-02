@@ -21,7 +21,7 @@ local function setting(settingtype, name, default)
 			getbool_default("maptools." .. name, default)
 	else
 		maptools.config[name] =
-			minetest.setting_get("maptools." .. name) or default
+			minetest.settings:get("maptools." .. name) or default
 	end
 end
 
