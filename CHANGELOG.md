@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 
 - The minimum supported Minetest version is now 5.0.0.
+- Map Tools nodes/items can no longer be dropped to prevent them from falling
+  into bad hands.
 
 ## [1.1.0] - 2019-03-23
 
