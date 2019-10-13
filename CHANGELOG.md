@@ -13,6 +13,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Map Tools nodes/items can no longer be dropped to prevent them from falling
   into bad hands.
 
+### Fixed
+
+- The inventory images of `no_interact`, `no_build`, `ignore_like_no_clip`
+  and `ignore_like_no_point` now use textures that are available in
+  Minetest Game 5.0.0.
+
 ## [1.1.0] - 2019-03-23
 
 ### Changed
