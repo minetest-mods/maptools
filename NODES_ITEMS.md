@@ -9,8 +9,8 @@ use `-1` as the amount.
 ## Nodes
 
 :warning: denotes an unpointable, unbreakable block; be very careful with them,
-as they cannot be removed by hand (they can only be removed with WorldEdit or
-similar).
+as they cannot be removed by hand (they can only be removed with
+[WorldEdit](https://github.com/Uberi/Minetest-WorldEdit) or similar).
 
 | Item code               | Description                                                                                                                                                            |
 | ----------------------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
