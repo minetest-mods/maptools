@@ -21,9 +21,7 @@ git clone https://github.com/minetest-mods/maptools.git
 
 You can also
 [download a ZIP archive](https://github.com/minetest-mods/maptools/archive/master.zip)
-of Map Tools. If you do so, you will need to extract the archive then rename
-the resulting folder from `maptools-master` to `maptools` – this is
-**absolutely** required, as the mod won't work otherwise.
+of Map Tools.
 
 ### Enable the mod
 
