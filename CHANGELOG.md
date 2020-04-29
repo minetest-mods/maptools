@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+
+- 10 coins of each type can now be crafted using 2 ingots (bronze, silver or gold).
+  - Silver coins require [More Ores](https://github.com/minetest-mods/moreores)
+    to be crafted, since minetest_game doesn't have silver ingots.
+- Coins are now displayed in the creative inventory.
+
 ## [2.0.0] - 2019-11-25
 
 ### Changed
