@@ -16,8 +16,7 @@ minetest.register_craftitem("maptools:copper_coin", {
 	stack_max = 10000,
 })
 
-
-minetest.register_craft ({
+minetest.register_craft({
 	output = "maptools:copper_coin 10",
 	type = "shapeless",
 	recipe = { "default:copper_ingot", "default:copper_ingot" }
@@ -31,7 +30,7 @@ minetest.register_craftitem("maptools:silver_coin", {
 })
 
 if minetest.get_modpath("moreores") then
-	minetest.register_craft ({
+	minetest.register_craft({
 		output = "maptools:silver_coin 10",
 		type = "shapeless",
 		recipe = { "moreores:silver_ingot", "moreores:silver_ingot" }
@@ -45,7 +44,7 @@ minetest.register_craftitem("maptools:gold_coin", {
 	stack_max = 10000,
 })
 
-minetest.register_craft ({
+minetest.register_craft({
 	output = "maptools:gold_coin 10",
 	type = "shapeless",
 	recipe = { "default:gold_ingot", "default:gold_ingot" }
