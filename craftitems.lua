@@ -14,7 +14,13 @@ minetest.register_craftitem("maptools:copper_coin", {
 	inventory_image = "maptools_copper_coin.png",
 	wield_scale = {x = 0.5, y = 0.5, z = 0.25},
 	stack_max = 10000,
-	groups = {not_in_creative_inventory = maptools.creative},
+})
+
+
+minetest.register_craft ({
+	output = "maptools:copper_coin 10",
+	type = "shapeless",
+	recipe = { "default:copper_ingot", "default:copper_ingot" }
 })
 
 minetest.register_craftitem("maptools:silver_coin", {
@@ -22,15 +28,27 @@ minetest.register_craftitem("maptools:silver_coin", {
 	inventory_image = "maptools_silver_coin.png",
 	wield_scale = {x = 0.5, y = 0.5, z = 0.25},
 	stack_max = 10000,
-	groups = {not_in_creative_inventory = maptools.creative},
 })
+
+if minetest.get_modpath("moreores") then
+	minetest.register_craft ({
+		output = "maptools:silver_coin 10",
+		type = "shapeless",
+		recipe = { "moreores:silver_ingot", "moreores:silver_ingot" }
+	})
+end
 
 minetest.register_craftitem("maptools:gold_coin", {
 	description = S("Gold Coin"),
 	inventory_image = "maptools_gold_coin.png",
 	wield_scale = {x = 0.5, y = 0.5, z = 0.25},
 	stack_max = 10000,
-	groups = {not_in_creative_inventory = maptools.creative},
+})
+
+minetest.register_craft ({
+	output = "maptools:gold_coin 10",
+	type = "shapeless",
+	recipe = { "default:gold_ingot", "default:gold_ingot" }
 })
 
 minetest.register_craftitem("maptools:infinitefuel", {
