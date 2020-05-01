@@ -23,7 +23,3 @@ stds.minetest = {
 		},
 	}
 }
-
-read_globals = {
-	"intllib",
-}
