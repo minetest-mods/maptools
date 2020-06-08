@@ -12,9 +12,8 @@ maptools = {}
 
 local modpath = minetest.get_modpath("maptools")
 
-local S, NS = dofile(modpath .. "/intllib.lua")
+local S = minetest.get_translator("maptools")
 maptools.S = S
-maptools.NS = NS
 
 maptools.drop_msg = function(itemstack, player)
 	local name = player:get_player_name()
