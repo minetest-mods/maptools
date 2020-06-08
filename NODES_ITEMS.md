@@ -23,6 +23,7 @@ as they cannot be removed by hand (they can only be removed with
 | `maptools:no_interact`  | Prevents interacting through the block (opening chests, furnaces, attacking entities, …), but can still be walked through.                                             |
 | `maptools:damage_{1…5}` | :warning: Damaging blocks which damage players by 1 to 5 HP per second.                                                                                                |
 | `maptools:kill`         | :warning: Instant kill blocks (damages players by 20 HP per second).                                                                                                   |
+| `maptools:drowning`     | :warning: Simulates drowning in water.                                         |
 | `maptools:light_block`  | :warning: Invisible non-solid block, prevents light from passing through.                                                                                              |
 | `maptools:light_bulb`   | :warning: Invisible non-solid block, emitting the maximum amount of light.                                                                                             |
 

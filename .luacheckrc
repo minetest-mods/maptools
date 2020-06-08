@@ -3,6 +3,10 @@ unused_args = false
 allow_defined_top = true
 max_line_length = 90
 
+globals = {
+	"maptools"
+}
+
 stds.minetest = {
 	read_globals = {
 		"DIR_DELIM",
