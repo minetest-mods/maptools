@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
   - Silver coins require [More Ores](https://github.com/minetest-mods/moreores)
     to be crafted, since minetest_game doesn't have silver ingots.
 - Coins are now displayed in the creative inventory.
+- Moved translations from intllib to Minetest's built-in localization system.
+  - This allows translations to show up independently of the server's language.
 
 ## [2.0.0] - 2019-11-25
 
