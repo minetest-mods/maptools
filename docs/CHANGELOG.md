@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+
+- Switch to GitHub actions.
+  - Benefits include faster responses.
+
+### Removed
+
+- Removed Travis CI.
+
 ## [2.1.0] - 2020-06-08
 
 ### Changed
