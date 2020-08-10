@@ -49,7 +49,7 @@ maptools.register_unbreakable_node("default:sand")
 maptools.register_unbreakable_node("default:clay")
 maptools.register_unbreakable_node("default:desert_sand")
 maptools.register_unbreakable_node("default:sandstone")
-maptools.register_unbreakable_node("default:sandstone_brick")
+maptools.register_unbreakable_node("default:sandstonebrick")
 maptools.register_unbreakable_node("default:desert_stone")
 maptools.register_unbreakable_node("default:desert_cobble")
 maptools.register_unbreakable_node("default:desert_stonebrick")
@@ -71,9 +71,15 @@ maptools.register_unbreakable_node("default:ladder_wood")
 
 maptools.register_unbreakable_node("farming:soil_wet")
 maptools.register_unbreakable_node("farming:desert_sand_soil_wet")
-minetest.registered_nodes["default:dirt_u"].soil = nil
-minetest.registered_nodes["farming:soil_wet_u"].soil = nil
-minetest.registered_nodes["farming:desert_sand_soil_wet_u"].soil = nil
+dirt_new = shallowCopy(minetest.registered_nodes["default:dirt_u"])
+dirt_new.soil = nil
+minetest.register_node(":default:dirt_u",dirt_new)
+soil_new = shallowCopy(minetest.registered_nodes["farming:soil_wet_u"])
+soil_new.soil = nil
+minetest.register_node(":farming:soil_wet_u",soil_new)
+dirt_sand_new = shallowCopy(minetest.registered_nodes["farming:desert_sand_soil_wet_u"])
+dirt_sand_new.soil = nil
+minetest.register_node(":farming:desert_sand_soil_wet_u",dirt_sand_new)
 
 
 
