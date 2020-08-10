@@ -31,6 +31,7 @@ function maptools.register_unbreakable_node(name)
 	dst_def.groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative}
 	dst_def.on_drop = maptools.drop_msg
 	minetest.register_node(":"..name.."_u", dst_def)
+	return true
 end
 
 maptools.register_unbreakable_node("default:stone")
