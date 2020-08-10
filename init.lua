@@ -23,6 +23,6 @@ end
 dofile(modpath .. "/config.lua")
 dofile(modpath .. "/aliases.lua")
 dofile(modpath .. "/craftitems.lua")
-dofile(modpath .. "/default_nodes.lua")
+dofile(modpath .. "/unbreakable_nodes.lua")
 dofile(modpath .. "/nodes.lua")
 dofile(modpath .. "/tools.lua")
