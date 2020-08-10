@@ -20,6 +20,7 @@ local function register_node(name, def)
 		def.groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative}
 	end
 	def.on_drop = maptools.drop_msg
+	def.on_blast = function() end
 	minetest.register_node(name, def)
 end
 
