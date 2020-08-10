@@ -62,6 +62,8 @@ maptools.register_unbreakable_node("default:goldblock")
 maptools.register_unbreakable_node("default:copperblock")
 maptools.register_unbreakable_node("default:bronzeblock")
 maptools.register_unbreakable_node("default:diamondblock")
+maptools.register_unbreakable_node("default:ladder_steel")
+maptools.register_unbreakable_node("default:ladder_wood")
 
 
 -- Farming:
