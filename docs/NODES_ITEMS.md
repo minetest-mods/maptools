@@ -14,7 +14,7 @@ as they cannot be removed by hand (they can only be removed with
 
 | Item code               | Description                                                                                                                                                            |
 | ----------------------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `maptools:{block}_u`    | Unbreakable, non-flammable, non-falling, non-decaying blocks. Most common default blocks have an unbreakable form available (`maptools:stone_u`, `maptools:wood_u`, …) |
+| `{modname}:{block}_u`    | Unbreakable, non-flammable, non-falling, non-decaying blocks. Most common default blocks have an unbreakable form available (`default:stone_u`, `default:wood_u`, …) |
 | `maptools:full_grass`   | Unbreakable block with the grass texture on all sides.                                                                                                                 |
 | `maptools:player_clip`  | :warning: Invisible, non-pointable block that blocks players and entities.                                                                                             |
 | `maptools:full_clip`    | Invisible, pointable block that blocks players and entities. Also available as a thin face (`maptools:full_clip_face`).                                                |

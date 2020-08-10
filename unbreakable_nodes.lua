@@ -24,7 +24,7 @@ function maptools.register_unbreakable_node(name)
 		return false
 	end
 	local dst_def = shallowCopy(src_def)
-	dst_def.description = "Unbreakable "..src_def.description
+	dst_def.description = maptools.S("Unbreakable").." "..src_def.description
 	dst_def.range = 12
 	dst_def.stack_max = 10000
 	dst_def.drop = ""
