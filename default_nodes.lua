@@ -10,6 +10,7 @@ local S = maptools.S
 maptools.creative = maptools.config["hide_from_creative_inventory"]
 
 local function register_node(name, def)
+	-- Increase the interaction range when holding Map Tools nodes to make building easier.
 	def.range = 12
 	def.stack_max = 10000
 	def.drop = ""
@@ -20,6 +21,7 @@ local function register_node(name, def)
 		def.groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative}
 	end
 	def.on_drop = maptools.drop_msg
+	-- Prevent Map Tools nodes from being exploded by TNT.
 	def.on_blast = function() end
 	minetest.register_node(name, def)
 end
