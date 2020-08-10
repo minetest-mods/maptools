@@ -6,7 +6,7 @@ world block sandbox game.
 ## Resources
 
 - [Forum topic](https://forum.minetest.net/viewtopic.php?f=11&t=1882)
-- [List of nodes and items available](NODES_ITEMS.md)
+- [List of nodes and items available](docs/NODES_ITEMS.md)
 
 ## Installation
 
