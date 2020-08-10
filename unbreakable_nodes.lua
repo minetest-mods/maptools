@@ -20,7 +20,7 @@ maptools.creative = maptools.config["hide_from_creative_inventory"]
 function maptools.register_unbreakable_node(name)
 	local src_def = minetest.registered_nodes[name]
 	if not(src_def) then
-		minetest.log("[maptools] Can't register unbreakable node "..name.."_u : source not is nil!")
+		minetest.log("[maptools] Can't register unbreakable node "..name.."_u : source is nil!")
 		return false
 	end
 	local dst_def = shallowCopy(src_def)
