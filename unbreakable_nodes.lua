@@ -68,6 +68,9 @@ maptools.register_unbreakable_node("default:diamondblock")
 
 maptools.register_unbreakable_node("farming:soil_wet")
 maptools.register_unbreakable_node("farming:desert_sand_soil_wet")
+minetest.registered_nodes["default:dirt_u"].soil = nil
+minetest.registered_nodes["farming:soil_wet_u"].soil = nil
+minetest.registered_nodes["farming:desert_sand_soil_wet_u"].soil = nil
 
 
 
