@@ -13,7 +13,7 @@ as they cannot be removed by hand (they can only be removed with
 [WorldEdit](https://github.com/Uberi/Minetest-WorldEdit) or similar).
 
 | Item code               | Description                                                                                                                                                            |
-| ----------------------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ----------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `maptools:{block}_u`    | Unbreakable, non-flammable, non-falling, non-decaying blocks. Most common default blocks have an unbreakable form available (`maptools:stone_u`, `maptools:wood_u`, …) |
 | `maptools:full_grass`   | Unbreakable block with the grass texture on all sides.                                                                                                                 |
 | `maptools:player_clip`  | :warning: Invisible, non-pointable block that blocks players and entities.                                                                                             |
@@ -30,7 +30,7 @@ as they cannot be removed by hand (they can only be removed with
 ## Items
 
 | Item code                        | Description                                                                                                                                       |
-| -------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| -------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `maptools:admin_pick`            | A bright magenta pickaxe with infinite durability, digs everything including unbreakable blocks instantly. No drops are given when digging nodes. |
 | `maptools:admin_pick_with_drops` | Same as the admin pickaxe, but drops are given when digging nodes.                                                                                |
 | `maptools:infinite_fuel`         | Fuel lasting for a near-infinite time (about 50 real-life years).                                                                                 |
