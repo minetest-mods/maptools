@@ -18,12 +18,12 @@ as they cannot be removed by hand (they can only be removed with
 | `maptools:full_grass`   | Unbreakable block with the grass texture on all sides.                                                                                                                 |
 | `maptools:player_clip`  | :warning: Invisible, non-pointable block that blocks players and entities.                                                                                             |
 | `maptools:full_clip`    | Invisible, pointable block that blocks players and entities. Also available as a thin face (`maptools:full_clip_face`).                                                |
-| `maptools:smoke_block`  | Some smoke (doesn't damage players or entities).                                                                                                                       |
+| `maptools:smoke`        | Some smoke. Decreases visibility, but doesn't damage players or entities).                                                                                             |
 | `maptools:no_build`     | :warning: Very basic building prevention.                                                                                                                              |
 | `maptools:no_interact`  | Prevents interacting through the block (opening chests, furnaces, attacking entities, …), but can still be walked through.                                             |
 | `maptools:damage_{1…5}` | :warning: Damaging blocks which damage players by 1 to 5 HP per second.                                                                                                |
 | `maptools:kill`         | :warning: Instant kill blocks (damages players by 20 HP per second).                                                                                                   |
-| `maptools:drowning`     | :warning: Simulates drowning in water.                                         |
+| `maptools:drowning`     | :warning: Simulates drowning in water.                                                                                                                                 |
 | `maptools:light_block`  | :warning: Invisible non-solid block, prevents light from passing through.                                                                                              |
 | `maptools:light_bulb`   | :warning: Invisible non-solid block, emitting the maximum amount of light.                                                                                             |
 
