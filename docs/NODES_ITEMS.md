@@ -25,7 +25,7 @@ as they cannot be removed by hand (they can only be removed with
 | `maptools:kill`         | :warning: Instant kill blocks (damages players by 20 HP per second).                                                                                                   |
 | `maptools:drowning`     | :warning: Simulates drowning in water.                                                                                                                                 |
 | `maptools:light_block`  | :warning: Invisible non-solid block, prevents light from passing through.                                                                                              |
-| `maptools:light_bulb`   | :warning: Invisible non-solid block, emitting the maximum amount of light.                                                                                             |
+| `maptools:lightbulb`   | :warning: Invisible non-solid block, emitting the maximum amount of light.                                                                                              |
 
 ## Items
 
