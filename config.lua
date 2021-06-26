@@ -27,3 +27,5 @@ end
 
 -- Show Map Tools stuff in creative inventory (1 or 0):
 setting("integer", "hide_from_creative_inventory", 1)
+-- Enable crafting recipes for coins (true or false):
+setting("bool", "enable_coin_crafting", false)
