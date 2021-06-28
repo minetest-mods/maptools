@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 
-- Disabled crafting recipes for coins by default.
+- [Disabled crafting recipes for coins by default.](https://github.com/minetest-mods/maptools/pull/29)
   - They can be enabled again by setting `maptools.enable_coin_crafting = true`
     in `minetest.conf`.
 - Map Tools nodes can no longer be exploded by TNT.
