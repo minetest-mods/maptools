@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [2.2.0] - 2021-06-28
+
 ### Changed
 
 - Disabled crafting recipes for coins by default.
@@ -51,7 +53,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - Initial versioned release.
 
-[Unreleased]: https://github.com/minetest-mods/maptools/compare/v2.1.0...HEAD
+[Unreleased]: https://github.com/minetest-mods/maptools/compare/v2.2.0...HEAD
+[2.2.0]: https://github.com/minetest-mods/maptools/compare/v2.1.0...v2.2.0
 [2.1.0]: https://github.com/minetest-mods/maptools/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/minetest-mods/maptools/compare/v1.1.0...v2.0.0
 [1.1.0]: https://github.com/minetest-mods/maptools/compare/v1.0.0...v1.1.0
