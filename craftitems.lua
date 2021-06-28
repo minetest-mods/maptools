@@ -17,13 +17,11 @@ minetest.register_craftitem("maptools:copper_coin", {
 })
 
 if maptools.config and maptools.config.enable_coin_crafting then
-
 	minetest.register_craft({
 		output = "maptools:copper_coin 10",
 		type = "shapeless",
 		recipe = { "default:copper_ingot", "default:copper_ingot" }
 	})
-
 end
 
 minetest.register_craftitem("maptools:silver_coin", {
@@ -34,7 +32,6 @@ minetest.register_craftitem("maptools:silver_coin", {
 })
 
 if maptools.config and maptools.config.enable_coin_crafting then
-
 	if minetest.get_modpath("moreores") then
 		minetest.register_craft({
 			output = "maptools:silver_coin 10",
@@ -42,7 +39,6 @@ if maptools.config and maptools.config.enable_coin_crafting then
 			recipe = { "moreores:silver_ingot", "moreores:silver_ingot" }
 		})
 	end
-
 end
 
 minetest.register_craftitem("maptools:gold_coin", {
@@ -53,13 +49,11 @@ minetest.register_craftitem("maptools:gold_coin", {
 })
 
 if maptools.config and maptools.config.enable_coin_crafting then
-
 	minetest.register_craft({
 		output = "maptools:gold_coin 10",
 		type = "shapeless",
 		recipe = { "default:gold_ingot", "default:gold_ingot" }
 	})
-
 end
 
 minetest.register_craftitem("maptools:infinitefuel", {
