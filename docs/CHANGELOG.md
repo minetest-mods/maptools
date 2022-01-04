@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+
+- [The Admin Pickaxe can now dig More Ores' mithril blocks with client-side prediction (thanks to `maxlevel` being increased from 3 to 5).](https://github.com/minetest-mods/maptools/pull/30)
+
 ## [2.2.0] - 2021-06-28
 
 ### Changed
