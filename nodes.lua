@@ -275,6 +275,7 @@ minetest.register_node("maptools:lightbulb", {
 	paramtype = "light",
 	sunlight_propagates = true,
 	drop = "",
+	buildable_to = true,
 	groups = {unbreakable = 1, not_in_creative_inventory = maptools.creative},
 	on_drop = maptools.drop_msg
 })
