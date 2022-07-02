@@ -59,7 +59,7 @@ end
 minetest.register_craftitem("maptools:infinitefuel", {
 	description = S("Infinite Fuel"),
 	inventory_image = "maptools_infinitefuel.png",
-	stack_max = 10000,
+	stack_max = 65535,
 	groups = {not_in_creative_inventory = maptools.creative},
 })
 
