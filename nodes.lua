@@ -85,6 +85,7 @@ register_node("maptools:ignore_like", {
 	tiles = {"invisible.png"},
 	paramtype = "light",
 	sunlight_propagates = true,
+	use_texture_alpha = "clip",
 })
 
 register_node("maptools:ignore_like_no_clip", {
@@ -94,6 +95,7 @@ register_node("maptools:ignore_like_no_clip", {
 	paramtype = "light",
 	walkable = false,
 	sunlight_propagates = true,
+	use_texture_alpha = "clip",
 })
 
 
@@ -104,6 +106,7 @@ register_node("maptools:ignore_like_no_point", {
 	paramtype = "light",
 	pointable = false,
 	sunlight_propagates = true,
+	use_texture_alpha = "clip",
 })
 
 register_node("maptools:ignore_like_no_clip_no_point", {
@@ -124,6 +127,7 @@ register_node("maptools:fullclip_face", {
 	paramtype = "light",
 	paramtype2 = "facedir",
 	sunlight_propagates = true,
+	use_texture_alpha = "clip",
 	node_box = {
 		type = "fixed",
 		fixed = {-0.5, -0.5, -0.5, 0.5, -0.4999, 0.5},
@@ -141,6 +145,7 @@ register_node("maptools:playerclip_bottom", {
 	pointable = false,
 	paramtype = "light",
 	sunlight_propagates = true,
+	use_texture_alpha = "clip",
 	node_box = {
 		type = "fixed",
 		fixed = {-0.5, -0.5, -0.5, 0.5, -0.4999, 0.5},
@@ -158,6 +163,7 @@ register_node("maptools:playerclip_top", {
 	pointable = false,
 	paramtype = "light",
 	sunlight_propagates = true,
+	use_texture_alpha = "clip",
 	node_box = {
 		type = "fixed",
 		fixed = {-0.5, 0.4999, -0.5, 0.5, 0.5, 0.5},
@@ -176,6 +182,7 @@ for pusher_num=1,10,1 do
 		paramtype = "light",
 		paramtype2 = "facedir",
 		sunlight_propagates = true,
+		use_texture_alpha = "clip",
 		node_box = {
 			type = "fixed",
 			fixed = {-0.5, -0.5, -0.5, 0.5, -0.4999, 0.5},
