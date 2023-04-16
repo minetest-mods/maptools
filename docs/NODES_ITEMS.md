@@ -13,6 +13,7 @@ as they cannot be removed by hand (they can only be removed with
 [WorldEdit](https://github.com/Uberi/Minetest-WorldEdit) or similar).
 
 > **Note**
+>
 > All of the nodes mentioned below have aliases which can be used as well.\
 > Here's the full aliases list: <https://github.com/minetest-mods/maptools/blob/master/aliases.lua>
 
